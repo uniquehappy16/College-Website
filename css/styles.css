@@ -1,0 +1,499 @@
+/* Page Reset  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* Basic HTML Elements  */
+
+body{
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+}
+
+/* Basic HTML Elements Ends */
+
+
+/* Navbar */
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.navbar-logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 8%;
+}
+
+.navbar-logo-img {
+    width: 23%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #334b6b;
+}
+
+.navbar-nav li {
+    font-size: 1rem;
+}    
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+}
+
+.dropdown:hover .dropdown-menu .dropdown-item {
+    color: #000;
+}
+
+.dropdown:hover .dropdown-menu .dropdown-item:hover {   
+    color: #fff;
+    background-color: orange;
+}
+
+.clicked {
+    color: #000;
+    text-align: left;
+}
+
+.clicked:hover {
+    color: #fff;
+    background-color: orange;
+}
+
+.courses-sub-menu{
+    display:none;
+    background-color:white;   
+}
+
+.dropend:hover > .courses-sub-menu{
+    display:block;
+    position: absolute;
+    left: 95%;
+    top:10%;
+    padding: 0.5rem 0.9rem 0.5rem 0.9rem;
+    border-radius: 5%;
+    border-left: 0.2rem solid #00ADEF;
+}
+
+/* Navbar Ends */
+
+/* Carousel Images */
+
+.carousel-inner > .carousel-item > img {
+    width: 500px;
+    height: 700px;
+    padding: 10px 90px;
+    object-fit: contain;
+}
+
+.carousel .carousel-indicators button {
+    width: 10px;
+   height: 10px;
+   border-radius: 100%;
+   background-color: #000;
+ }
+
+/* Carousel Images Section Ends */
+
+/* Administration Section */
+ 
+ .administration {
+    justify-content:space-evenly;
+    display: flex;
+    border:none;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 120px;
+}
+
+.Card{
+    width: 22%;
+    height: 420px;
+    background-color: #fff;
+}
+
+.adminisimg {
+    width: 100%;
+    border-radius: 100%;
+    padding: 20px 20px 0px;
+}
+
+.Card-margins{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.adminisdata{
+    margin:1rem;
+    color: #2C2B2B;
+    text-align: center;
+}
+
+.accordion-body {
+display: none;
+background-color: #Fff;
+}
+
+.accordion-button {
+    background-color: #Fff;
+}
+
+/* Administration Section Ends */
+  
+/* Content below Accordion */
+
+.content-below {
+    transition: all 0.3s ease;
+} 
+
+/* Content below Accordion Section Ends*/
+
+/* Notifications and Events Panel */
+
+.notificationsevents-panel {
+    display: flex;
+    justify-content: space-evenly;
+    border:none;
+    text-align: center;
+    margin: 20px;
+}
+
+.notieven-panel {
+    width: 35%;
+    height: 400px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.notieven-panel-header {
+    background-color: #f5811e;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.notieven-panel-content {
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+}
+
+.notieven-panel-content p {
+    border-bottom: 1px dashed #d5d5d5;
+    margin: 15px 0;
+    padding: 10px 5px;
+    font-size: 15px; 
+    text-align: center;
+}
+
+/* Notifications and Events Panel Section Ends */
+
+/* Courses Panel */
+
+.courses-panel-section {
+    padding: 60px 0;
+    background: url(../images/courses-panel-bg.jpeg);
+    background-attachment: fixed;
+}
+
+.courses-container-panel {
+    justify-content: center;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.courses-coontainer-panel-heading-box {
+    padding-bottom: 1rem;
+    text-align: center;
+ }
+
+.courses-panel-title {
+    color: #014a91;
+    font-size: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+} 
+
+.courses-panel-title-icon {
+    animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;  
+}
+
+.courses-panel-title-icon i {
+    color: #014a91;
+}
+
+.courses-column-panel {
+    display: flex;
+    justify-content: space-evenly;
+    border:none;
+    text-align: center;
+    margin: 20px;
+}
+
+.btech-column-box {
+    width: 30%;
+    height: 300px;
+    background-color: #f5811e;
+}
+
+.mca-column-box {
+    width: 30%;
+    height: 300px;
+    background-color: #00ADEF;
+}
+
+.courses-column-box-main-footer {
+    padding: 5px 0px 1px;
+}
+
+.courses-column-box-main-footer h6 {
+    padding: 10px 0 5px 0;
+}
+
+.courses-column-box-main-footer h6 a {
+    color: #000;
+}
+
+.courses-column-box-main-footer h6 .courses-btech-text:hover{
+    color: #00ADEF;
+}
+
+.courses-column-box-main-footer h6 a {
+    color: #000;
+}
+
+.courses-column-box-main-footer h6 .courses-mca-text:hover{
+    color: orange;
+}
+
+/* Courses Panel Section Ends */
+
+/* Gallery Section Starts  */
+
+.gallery-heading {
+    color: orange;
+    text-align: center;
+    font-size: 1.75rem;
+    margin-top: 15px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    padding-top: 10px;
+} 
+
+.gallery-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.image {
+    width: 100%;
+    text-align: center;   
+}
+
+.image img {
+    width: 500px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    max-width: 100%;   
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    object-fit: cover;
+}
+
+/* Gallery Section Ends  */
+
+/* Student Testimonial Section  */ 
+
+.testimonial-main-section {
+    background-color: #00ADEF;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+.testimonial {
+    width: 490px;
+    float: left;
+    margin-right:10px;
+    padding-right: 5px;
+}
+.testimonial-text {
+    background: #f0f3fa;
+    padding: 20px;
+    line-height: 35px;
+    border-radius: 10px;
+    text-align: justify;
+}
+.testimonial-detail {
+    float:left;
+    margin-top:10px;
+    display: flex;
+    color: #f0f0f0;
+}
+.testimonial-img {
+    float:left;
+}
+.testimonial-img img {
+    border-radius:100%;
+    margin-left: 20px;
+}
+.testimonial-name {
+    margin-right: 200px;
+    float:left;
+    padding-top: 20px;
+}
+.testimonial-name h5 {
+    font-size:18px;
+    margin-top:8px;
+}
+
+/* Student Testimonial Section Ends */
+
+/* Footer */
+
+footer a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+footer {
+    background: #f3f3f3;
+    text-align: center;
+    color: #f0f0f0;
+    display: block;
+}
+
+.footer-section {
+    margin-top: 5px;
+    padding: 40px 0;
+    background: #27272E;
+    text-align: left;
+    color: #f0f0f0;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.color-text-a {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer-contact-details {
+    color: #f0f0f0;
+    margin-bottom: 5px;
+}
+
+.footermiddle-content-item a {
+    position: relative;
+    padding: 0 0 5px 0;
+    
+}
+
+.footermiddle-content-item a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    background-color: #f0f0f0;
+    transition: transform 0.3s;
+}
+
+.footermiddle-contents ul li {
+    margin-bottom: 10px;
+}
+
+.footer-social-icons-body {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.footer-social-icons-body .list-inline {
+    line-height: normal;
+    text-align: center;
+}
+
+.footer-social-icons-body .list-inline-item {
+    font-size: larger;
+    padding: 5px;
+    display: inline-block;
+}
+
+footer .copyright-footer {
+    border-top: 1px solid #494949;
+    padding-top: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+footer .copyright-footer p {
+    margin-bottom: 0;
+    margin-top: 10px;
+} 
+
+.social-icon:hover {
+    color: blanchedalmond;
+} 
+
+.copyright {
+    color: white;
+    text-align: center;
+}
+
+.copyright:hover {
+    color: blanchedalmond;
+}
+
+/* Footer Section Ends */
+
+/* Keyframes Section */
+
+@keyframes bounce {
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Keyframes Section Ends */
